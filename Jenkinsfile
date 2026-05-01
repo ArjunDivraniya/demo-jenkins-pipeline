@@ -5,13 +5,13 @@ stages {
 
     stage('Build') {
         steps {
-            sh 'javac CrudOperation.java'
+            bat 'javac CrudOperation.java'
         }
     }
 
     stage('Run') {
         steps {
-            sh 'echo 5 | java CrudOperation'
+            bat 'echo 5 | java CrudOperation'
         }
     }
 }
